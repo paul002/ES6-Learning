@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+<head>
+<title>mortgage-calculator</title>
+<link rel="stylesheet" href="./css/styles.css" type="text/css" media="all">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>ES6 Learning</h1>
+		<div class="container">
+			<div class="form">
+			
+			        <div>
+			            <label for="principal">Principal:</label>
+			            <input type="text" id="principal" value="200000"/>
+			        </div>
+			        <div>
+			            <label for="years">Year(s):</label>
+			            <input type="text" id="years" value="30"/>
+			        </div>
+			        <div>
+			            <label for="rate">Rate:</label>
+			            <input type="text" id="rate" value="5.0">
+			        </div>
+			        <button id="calcBtn" style="font-weight: bold">Calculate</button>
+			    </div>
+			    <div style="text-align: center; margin-top: 10px;">
+					<h3>Monthly Payment: <span id="monthlyPayment" class="currency"></span></h3>
+					<h3>Monthly Rate: <span id="monthlyRate" class="currency"></span></h3>
+			    </div>
+			</div>
+			<table>
+			    <thead>
+			        <tr>
+			            <th>Year</th>
+			            <th>Principal</th>
+			            <th class="stretch"></th>
+			            <th>Interest</th>
+			            <th>Balance</th>
+			        </tr>
+			    </thead>
+			    <tbody id="amortization"></tbody>
+			</table>			
+		</div>
+	</div>
+
+<script src="calc-bundle.js"></script>	
+</body>
+</html>

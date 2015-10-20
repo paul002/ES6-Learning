@@ -1,0 +1,30 @@
+{
+  "name": "mortgage-calculator",
+  "version": "1.0.0",
+  "description": "Mortgage calculator based on ECMAScript6. ES6 learning project",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 9000",
+    "build-calc": "babel calc.js -o calc-bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul002/ES6-Learning.git"
+  },
+  "author": "Paul Chifukwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paul002/ES6-Learning/issues"
+  },
+  "homepage": "https://github.com/paul002/ES6-Learning#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "gulp": "^3.9.0",
+    "http-server": "^0.8.5",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
